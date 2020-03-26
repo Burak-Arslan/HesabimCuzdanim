@@ -1,8 +1,11 @@
 package com.example.cuzdanimheabim.activtiy;
 
+import android.app.ActivityOptions;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
+import android.util.Pair;
+import android.view.View;
 import android.view.WindowManager;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
@@ -16,7 +19,7 @@ import com.example.cuzdanimheabim.R;
 
 public class MainActivity extends AppCompatActivity {
 
-    private static int SPLASH_SCREEN = 5000;
+    private static int SPLASH_SCREEN = 3000;
 
     Animation topAnimation, bottomAnimation;
     ImageView imgSplash;
@@ -62,7 +65,14 @@ public class MainActivity extends AppCompatActivity {
                 @Override
                 public void run() {
                     Intent loginIntent = new Intent(MainActivity.this, LoginActivity.class);
-                    startActivity(loginIntent);
+                    Pair[] pairs = new Pair[2];
+
+                    pairs[0] = new Pair<View, String>(imgSplash, "logo_image");
+                    pairs[1] = new Pair<View, String>(imgSplash, "logo_text");
+
+                    ActivityOptions activityOptions = ActivityOptions.makeSceneTransitionAnimation(MainActivity.this, pairs);
+                    startActivity(loginIntent, activityOptions.toBundle());
+
                 }
             }, SPLASH_SCREEN);
         } catch (Exception ex) {

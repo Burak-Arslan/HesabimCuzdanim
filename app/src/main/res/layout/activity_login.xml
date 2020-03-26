@@ -4,6 +4,129 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical"
+    android:padding="20dp"
     tools:context=".activtiy.LoginActivity">
+
+    <Button
+        android:id="@+id/btnSifremiUnuttum"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_margin="5dp"
+        android:layout_marginTop="8dp"
+        android:background="#00000000"
+        android:elevation="0dp"
+        android:fontFamily="@font/antic"
+        android:text="@string/LoginSifremiUnuttum"
+        android:textColor="#000"
+        app:layout_constraintEnd_toEndOf="@+id/btnGiris"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout2"></Button>
+
+    <Button
+        android:id="@+id/btnGiris"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="#000"
+        android:fontFamily="@font/antic"
+        android:text="@string/LoginGirisYap"
+        android:textColor="#fff"
+        android:transitionName="button_tran"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnSifremiUnuttum"></Button>
+
+    <Button
+        android:id="@+id/btnYeniKullanici"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_margin="5dp"
+        android:layout_marginTop="8dp"
+        android:background="#00000000"
+        android:elevation="0dp"
+        android:fontFamily="@font/antic"
+        android:text="@string/loginYeniKullanici"
+        android:textColor="#000"
+        android:transitionName="login_signup_tran"
+        app:layout_constraintEnd_toEndOf="@+id/btnGiris"
+        app:layout_constraintStart_toStartOf="@+id/btnGiris"
+        app:layout_constraintTop_toBottomOf="@+id/btnGiris"></Button>
+
+
+    <ImageView
+        android:id="@+id/imgLoginLogo"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:background="@drawable/wallet1288"
+        android:transitionName="logo_image"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"></ImageView>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/antic"
+        android:text="@string/loginGiris"
+        android:textSize="18sp"
+        android:transitionName="logo_desc"
+        app:layout_constraintStart_toStartOf="@+id/txtLogoName"
+        app:layout_constraintTop_toBottomOf="@+id/txtLogoName"></TextView>
+
+    <TextView
+        android:id="@+id/txtLogoName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/bungee"
+        android:text="@string/loginSlogan"
+        android:textColor="#000"
+        android:textSize="40dp"
+        android:transitionName="logo_text"
+        app:layout_constraintStart_toStartOf="@+id/imgLoginLogo"
+        app:layout_constraintTop_toBottomOf="@+id/imgLoginLogo"></TextView>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout2"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:hint="@string/LoginSifre"
+        android:transitionName="password_tran"
+        app:layout_constraintEnd_toEndOf="@+id/btnGiris"
+        app:layout_constraintStart_toStartOf="@+id/btnGiris"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout"
+        app:passwordToggleEnabled="true"
+        app:passwordToggleTint="@color/colorAccent">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/txtPassword"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></com.google.android.material.textfield.TextInputEditText>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:hint="@string/loginKullaniciAdi"
+        app:layout_constraintEnd_toEndOf="@+id/btnGiris"
+        app:layout_constraintStart_toStartOf="@+id/btnGiris"
+        app:layout_constraintTop_toBottomOf="@+id/textView">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/txtUserName"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></com.google.android.material.textfield.TextInputEditText>
+    </com.google.android.material.textfield.TextInputLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

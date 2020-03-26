@@ -1,4 +1,22 @@
 <resources>
     <string name="app_name">Cuzdanim&amp;Hesabim</string>
-    <string name="splas_name">Cüzdanım &amp; Heabım</string>
+    <string name="splas_name">Cüzdanım \n &amp;\n Hesabım</string>
+
+    <string name="loginSlogan">Merhaba, \nHoş Geldiniz</string>
+    <string name="loginGiris">Giriş yapmak için devam ediniz</string>
+    <string name="loginKullaniciAdi">Kullanıcı Adı</string>
+    <string name="LoginSifre">Şifre</string>
+    <string name="LoginSifremiUnuttum">Şifremi Unuttum</string>
+    <string name="LoginGirisYap">Giriş</string>
+    <string name="loginYeniKullanici">Yeni Kullanıcı? Kayıt Ol</string>
+
+    <string name="signupMerhaba">Merhaba,</string>
+    <string name="signupOnSoz">Hesabınızı tutmak için kayıt olun</string>
+    <string name="signupAdSoyad">Ad - Soyad</string>
+    <string name="signupKullaniciAdi">Kullanıcı Adı</string>
+    <string name="signupEmail">E-Mail</string>
+    <string name="signupKayitOl">Kayıt Ol</string>
+    <string name="signupHesabimVar">Zaten bir hesabın var mı? Giriş</string>
+
+
 </resources>
