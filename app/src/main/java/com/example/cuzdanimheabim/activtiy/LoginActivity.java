@@ -18,10 +18,10 @@ import com.google.android.material.textfield.TextInputLayout;
 
 public class LoginActivity extends AppCompatActivity {
 
-    Button btnYeniKullanici ,btnGiris;
+    Button btnYeniKullanici, btnGiris;
     ImageView imgLogo;
-    TextView txtLogoName,txtSlogan;
-    TextInputLayout kullaniciAdi,Sifre;
+    TextView txtLogoName, txtSlogan;
+    TextInputLayout kullaniciAdi, Sifre;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -56,6 +56,22 @@ public class LoginActivity extends AppCompatActivity {
                     YeniKullaniciKayitEkraninaGit();
                 }
             });
+
+            btnGiris.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    ProfileGiris();
+                }
+            });
+        } catch (Exception ex) {
+            Toast.makeText(this, ex.getMessage(), Toast.LENGTH_SHORT).show();
+        }
+    }
+
+    private void ProfileGiris() {
+        try {
+            Intent profilEkraninaGirisIntent = new Intent(LoginActivity.this, ProfileActivity.class);
+            startActivity(profilEkraninaGirisIntent);
         } catch (Exception ex) {
             Toast.makeText(this, ex.getMessage(), Toast.LENGTH_SHORT).show();
         }

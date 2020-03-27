@@ -18,5 +18,7 @@
     <string name="signupKayitOl">Kayıt Ol</string>
     <string name="signupHesabimVar">Zaten bir hesabın var mı? Giriş</string>
 
+    <string name="profileGuncelleme">Güncelleme</string>
+
 
 </resources>
