@@ -20,5 +20,18 @@
 
     <string name="profileGuncelleme">Güncelleme</string>
 
+    <string name="onBoardBasla">Başla</string>
+    <string name="onBoardSkip">Geç</string>
+
+    <string name="onBoardSayfaBirBaslik">Başlık - 1</string>
+    <string name="onBoardSayfaIkiBaslik">Başlık - 2</string>
+    <string name="onBoardSayfaUcBaslik">Başlık - 3</string>
+    <string name="onBoardSayfaDortBaslik">Başlık - 4</string>
+
+    <string name="onBoardSayfaBirAciklama">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque lectus massa, accumsan eu odio vitae, faucibus malesuada urna. Duis vel diam diam. Suspendisse potenti. Nulla eu pulvinar nisl. In hac habitasse platea dictumst. Vestibulum vestibulum consectetur fermentum. Nunc imperdiet blandit efficitur. Nulla dapibus blandit urna, ut feugiat felis maximus at. Nunc ut neque sit amet orci aliquet consequat quis a tellus. In tortor enim, viverra eu vehicula sit amet, imperdiet nec neque.</string>
+    <string name="onBoardSayfaIkiAciklama">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque lectus massa, accumsan eu odio vitae, faucibus malesuada urna. Duis vel diam diam. Suspendisse potenti. Nulla eu pulvinar nisl. In hac habitasse platea dictumst. Vestibulum vestibulum consectetur fermentum. Nunc imperdiet blandit efficitur. Nulla dapibus blandit urna, ut feugiat felis maximus at. Nunc ut neque sit amet orci aliquet consequat quis a tellus. In tortor enim, viverra eu vehicula sit amet, imperdiet nec neque.</string>
+    <string name="onBoardSayfaUcAciklama">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque lectus massa, accumsan eu odio vitae, faucibus malesuada urna. Duis vel diam diam. Suspendisse potenti. Nulla eu pulvinar nisl. In hac habitasse platea dictumst. Vestibulum vestibulum consectetur fermentum. Nunc imperdiet blandit efficitur. Nulla dapibus blandit urna, ut feugiat felis maximus at. Nunc ut neque sit amet orci aliquet consequat quis a tellus. In tortor enim, viverra eu vehicula sit amet, imperdiet nec neque.</string>
+    <string name="onBoardSayfaDortAciklama">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque lectus massa, accumsan eu odio vitae, faucibus malesuada urna. Duis vel diam diam. Suspendisse potenti. Nulla eu pulvinar nisl. In hac habitasse platea dictumst. Vestibulum vestibulum consectetur fermentum. Nunc imperdiet blandit efficitur. Nulla dapibus blandit urna, ut feugiat felis maximus at. Nunc ut neque sit amet orci aliquet consequat quis a tellus. In tortor enim, viverra eu vehicula sit amet, imperdiet nec neque.</string>
+
 
 </resources>

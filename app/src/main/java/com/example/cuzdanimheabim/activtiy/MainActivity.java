@@ -2,6 +2,7 @@ package com.example.cuzdanimheabim.activtiy;
 
 import android.app.ActivityOptions;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.os.Handler;
 import android.util.Pair;
@@ -24,6 +25,8 @@ public class MainActivity extends AppCompatActivity {
     Animation topAnimation, bottomAnimation;
     ImageView imgSplash;
     TextView txtOnSoz, txtCuzdanimHesabim;
+
+    SharedPreferences onBoardingScreen;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -64,15 +67,32 @@ public class MainActivity extends AppCompatActivity {
             new Handler().postDelayed(new Runnable() {
                 @Override
                 public void run() {
-                    Intent loginIntent = new Intent(MainActivity.this, LoginActivity.class);
-                    Pair[] pairs = new Pair[2];
+                    onBoardingScreen = getSharedPreferences("onBoardingScreen", MODE_PRIVATE);
+                    boolean isFirstTime = onBoardingScreen.getBoolean("firstTime", true);
 
-                    pairs[0] = new Pair<View, String>(imgSplash, "logo_image");
-                    pairs[1] = new Pair<View, String>(imgSplash, "logo_text");
+                    if (isFirstTime) {
 
-                    ActivityOptions activityOptions = ActivityOptions.makeSceneTransitionAnimation(MainActivity.this, pairs);
-                    startActivity(loginIntent, activityOptions.toBundle());
+                        SharedPreferences.Editor editor = onBoardingScreen.edit();
+                        editor.putBoolean("firstTime", false);
+                        editor.commit();
 
+                        Intent onBoardingInten = new Intent(MainActivity.this, OnBoardActivity.class);
+                        startActivity(onBoardingInten);
+                        finish();
+
+                    } else {
+
+                        Intent loginIntent = new Intent(MainActivity.this, LoginActivity.class);
+                        Pair[] pairs = new Pair[2];
+
+                        pairs[0] = new Pair<View, String>(imgSplash, "logo_image");
+                        pairs[1] = new Pair<View, String>(imgSplash, "logo_text");
+
+                        ActivityOptions activityOptions = ActivityOptions.makeSceneTransitionAnimation(MainActivity.this, pairs);
+                        startActivity(loginIntent, activityOptions.toBundle());
+                        finish();
+
+                    }
                 }
             }, SPLASH_SCREEN);
         } catch (Exception ex) {

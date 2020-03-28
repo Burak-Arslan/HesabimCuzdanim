@@ -9,7 +9,8 @@
         android:roundIcon="@drawable/wallett64"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".activtiy.ProfileActivity"></activity>
+        <activity android:name=".activtiy.OnBoardActivity"></activity>
+        <activity android:name=".activtiy.ProfileActivity" />
         <activity android:name=".activtiy.SignUpActivity" />
         <activity android:name=".activtiy.LoginActivity" />
         <activity android:name=".activtiy.MainActivity">
