@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shortcuts xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <shortcut
+        android:enabled="true"
+        android:icon="@mipmap/gelir"
+        android:shortcutId="gelir"
+        android:shortcutLongLabel="@string/shortcutsGelir"
+        android:shortcutShortLabel="@string/shortcutsGelir">
+
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:targetClass="com.example.cuzdanimheabim.activtiy.SignUpActivity"
+            android:targetPackage="com.example.cuzdanimheabim.activtiy"></intent>
+    </shortcut>
+
+    <shortcut
+        android:enabled="true"
+        android:icon="@mipmap/gider"
+        android:shortcutId="gider"
+        android:shortcutLongLabel="@string/shortcutsGider"
+        android:shortcutShortLabel="@string/shortcutsGider">
+
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:targetClass="com.example.cuzdanimheabim.activtiy.OnBoardActivity"
+            android:targetPackage="com.example.cuzdanimheabim.activtiy"></intent>
+    </shortcut>
+
+</shortcuts>
