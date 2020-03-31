@@ -9,7 +9,8 @@
         android:roundIcon="@drawable/wallett64"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".activtiy.OnBoardActivity"></activity>
+        <activity android:name=".activtiy.SplashScreen"></activity>
+        <activity android:name=".activtiy.OnBoardActivity" />
         <activity android:name=".activtiy.ProfileActivity" />
         <activity android:name=".activtiy.SignUpActivity" />
         <activity android:name=".activtiy.LoginActivity" />
@@ -23,12 +24,11 @@
             <meta-data
                 android:name="android.app.shortcuts"
                 android:resource="@xml/shortcuts" />
-
         </activity>
 
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />
-
     </application>
+
 </manifest>

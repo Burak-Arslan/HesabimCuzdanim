@@ -36,5 +36,8 @@
     <string name="shortcutsGelir">Gelir</string>
     <string name="shortcutsGider">Gider</string>
 
+    <string name="menuHeaderSlogan">Cebinizdeki Akrep Olmaya Geldik</string>
+    <string name="menuHeaderAppName">Cüzdanım</string>
+
 
 </resources>

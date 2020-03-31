@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/test1"
+            android:icon="@drawable/user64"
+            android:title="test" />
+
+        <item
+            android:id="@+id/test2"
+            android:icon="@drawable/user64"
+            android:title="test2" />
+
+        <item
+            android:id="@+id/test3"
+            android:icon="@drawable/user64"
+            android:title="test3" />
+
+        <item
+            android:id="@+id/test4"
+            android:icon="@drawable/user64"
+            android:title="test4" />
+
+
+    </group>
+
+    <item android:title="Profile">
+        <menu>
+            <group android:checkableBehavior="single">
+
+                <item
+                    android:id="@+id/single1"
+                    android:icon="@drawable/user64"
+                    android:title="test" />
+
+                <item
+                    android:id="@+id/single2"
+                    android:icon="@drawable/user64"
+                    android:title="test2" />
+
+                <item
+                    android:id="@+id/single3"
+                    android:icon="@drawable/user64"
+                    android:title="test3" />
+
+                <item
+                    android:id="@+id/single5"
+                    android:icon="@drawable/user64"
+                    android:title="test4" />
+
+
+            </group>
+        </menu>
+    </item>
+
+    <item android:title="Kategori">
+        <menu>
+            <group android:checkableBehavior="single">
+
+                <item
+                    android:id="@+id/Kategori1"
+                    android:icon="@drawable/user64"
+                    android:title="test" />
+
+                <item
+                    android:id="@+id/Kategori2"
+                    android:icon="@drawable/user64"
+                    android:title="test2" />
+
+                <item
+                    android:id="@+id/Kategori3"
+                    android:icon="@drawable/user64"
+                    android:title="test3" />
+
+                <item
+                    android:id="@+id/Kategori4"
+                    android:icon="@drawable/user64"
+                    android:title="test4" />
+
+
+            </group>
+        </menu>
+    </item>
+
+    <item android:title="Paylaş">
+        <menu>
+            <group android:checkableBehavior="single">
+
+                <item
+                    android:id="@+id/paylas1"
+                    android:icon="@drawable/user64"
+                    android:title="test" />
+
+                <item
+                    android:id="@+id/paylas2"
+                    android:icon="@drawable/user64"
+                    android:title="test2" />
+
+                <item
+                    android:id="@+id/paylas3"
+                    android:icon="@drawable/user64"
+                    android:title="test3" />
+
+                <item
+                    android:id="@+id/paylas4"
+                    android:icon="@drawable/user64"
+                    android:title="test4" />
+
+
+            </group>
+        </menu>
+    </item>
+
+</menu>

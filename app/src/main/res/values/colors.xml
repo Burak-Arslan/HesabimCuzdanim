@@ -3,4 +3,6 @@
     <color name="colorPrimary">#fece2f</color>
     <color name="colorPrimaryDark">#fece2f</color>
     <color name="colorAccent">#fece2f</color>
+    <color name="lightwhite">#F5F5F5</color>
+    <color name="mainbackground">#E8E8E8</color>
 </resources>
