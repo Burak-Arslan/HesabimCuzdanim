@@ -6,8 +6,14 @@
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorControlHighlight">@color/navigationSelectedDark</item>
 
         <item name="android:windowContentTransitions">true</item>
+    </style>
+
+    <style name="navigationTheme">
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorControlHighlight">@color/navigationSelectedDark</item>
     </style>
 
 </resources>

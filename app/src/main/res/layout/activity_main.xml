@@ -9,6 +9,7 @@
     tools:openDrawer="start">
 
     <LinearLayout
+        android:id="@+id/lnrContent"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@color/mainbackground"
@@ -26,6 +27,7 @@
                 android:padding="20dp">
 
                 <ImageView
+                    android:id="@+id/imgMenu"
                     android:layout_width="40dp"
                     android:layout_height="40dp"
                     android:layout_centerVertical="true"
@@ -40,6 +42,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_gravity="start"
+        android:theme="@style/navigationTheme"
         android:background="@color/lightwhite"
         app:headerLayout="@layout/menu_header"
         app:menu="@menu/main_menu" />
