@@ -74,7 +74,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         try {
             navigationView.bringToFront();
             navigationView.setNavigationItemSelectedListener(this);
-            navigationView.setCheckedItem(R.id.test1);
+            navigationView.setCheckedItem(R.id.anasayfa);
 
         } catch (Exception ex) {
             Toast.makeText(this, ex.getMessage(), Toast.LENGTH_SHORT).show();
