@@ -63,6 +63,11 @@
                     android:title="Gelecek Giderlerim" />
 
                 <item
+                    android:id="@+id/bankaBilgilerim"
+                    android:icon="@drawable/museum"
+                    android:title="Banka Hesaplarım" />
+
+                <item
                     android:id="@+id/kurBilgileri"
                     android:icon="@drawable/exchange"
                     android:title="Kur Bilgileri - Hesaplama" />
@@ -70,7 +75,6 @@
             </group>
         </menu>
     </item>
-
 
     <item android:title="Paylaş">
         <menu>

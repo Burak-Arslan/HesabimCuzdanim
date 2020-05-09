@@ -6,4 +6,10 @@
     <color name="lightwhite">#F5F5F5</color>
     <color name="mainbackground">#E8E8E8</color>
     <color name="navigationSelectedDark">#808080</color>
+
+    <color name="dailogAlertError">#ff3943</color>
+    <color name="dailogAlertErrorDark">#801b20</color>
+
+    <color name="dailogAlertWarning">#808080</color>
+
 </resources>
